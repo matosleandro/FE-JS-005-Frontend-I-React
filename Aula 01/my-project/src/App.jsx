@@ -1,4 +1,6 @@
-import './App.css'
+import './App.css';
+import { Card } from './components/card';
+import {} from './components/Button.jsx';
 
 function App() {
 
@@ -6,6 +8,7 @@ function App() {
     <>
       <h1>Hello World!</h1>
       <hr/>
+      
     </>
   )
 }
