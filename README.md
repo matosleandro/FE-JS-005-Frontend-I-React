@@ -23,7 +23,7 @@ Módulo sendo ministrado pela Prof. [@leticiavargas](https://github.com/leticiav
     - Atividade 1 - Saudação personalizada
     - Atividade 2 - Criando um card de produto
     - Atividade 3 - Evoluindo o que já estava ótimo
-    - [Atividade [Entrega] - We 💚 movie 🎥](https://github.com/matosleandro/FE-JS-005-Frontend-I-React/tree/main/aula_02)
+    - Atividade [Entrega] - We 💚 movie 🎥
 ### [[Frontend I (React)] Atividades Aula 3](https://vargasleticia.notion.site/Frontend-I-React-Atividades-Aula-3-139d5cb5c0f6481c93d7a1e5dc450645)
     - Atividade 1 - Gerenciando Profiles
     - Atividade 2 - Ajustes via prop
