@@ -28,10 +28,5 @@ Módulo sendo ministrado pela Prof. [@leticiavargas](https://github.com/leticiav
 ### [Frontend I (React)] Atividades Aula 4
 ### [Frontend I (React)] Atividades Aula 5 - WIP
 ### [Frontend I (React)] Atividades Aula 6 - WIP
-<<<<<<< HEAD
 ### [Frontend I (React)] Atividades Aula 7 - WIP
-=======
 ### [Frontend I (React)] Atividades Aula 7 - WIP
-
-
->>>>>>> f221eecaceecb14b0547d081000ab1c4235388b5
