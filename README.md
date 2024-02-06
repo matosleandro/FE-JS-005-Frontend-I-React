@@ -6,8 +6,8 @@ Módulo sendo ministrado pela Prof. [@leticiavargas](https://github.com/leticiav
 
 ### [Aula 1 - Componentização e Introdução ao React](https://vargasleticia.notion.site/Aula-1-Componentiza-o-e-Introdu-o-ao-React-0208c79f9fc343b8ba24255661581c8a)
 ### [Aula 2 - JSX, Props e PropTypes](https://vargasleticia.notion.site/Aula-2-JSX-Props-e-PropTypes-ef9e9023b93f44e7a107c0e7fe04c2be)
-### Aula 3 - Composição de componentes e Renderização condicional
-### Aula 4 - State e State lifting
+### [Aula 3 - Composição de componentes e Renderização condicional](https://vargasleticia.notion.site/Aula-3-Composi-o-de-componentes-e-Renderiza-o-condicional-d4c6ebc3ecf145b7920da2d68354ecda)
+### [Aula 4 - State e State lifting](https://vargasleticia.notion.site/Aula-4-State-e-State-lifting-b4d4584a5b924b32a3a869c5b6d665af)
 ### Aula 5 - Formulários - WIP
 ### Aula 6 - Rotas - WIP
 ### Aula 7 - Ciclo de Vida - WIP
@@ -23,8 +23,14 @@ Módulo sendo ministrado pela Prof. [@leticiavargas](https://github.com/leticiav
     - Atividade 1 - Saudação personalizada
     - Atividade 2 - Criando um card de produto
     - Atividade 3 - Evoluindo o que já estava ótimo
-    - Atividade [Entrega] - We 💚 movie 🎥
-### [Frontend I (React)] Atividades Aula 3
+    - [Atividade [Entrega] - We 💚 movie 🎥](https://github.com/matosleandro/FE-JS-005-Frontend-I-React/tree/main/aula_02)
+### [[Frontend I (React)] Atividades Aula 3](https://vargasleticia.notion.site/Frontend-I-React-Atividades-Aula-3-139d5cb5c0f6481c93d7a1e5dc450645)
+    - Atividade 1 - Gerenciando Profiles
+    - Atividade 2 - Ajustes via prop
+    - Atividade 3 - JSX via children
+    - Atividade 4 - Refugio dos sabores
+    - Atividade 5 - Jardim poético
+    - Atividade [Entrega] - Comentarios de blog
 ### [Frontend I (React)] Atividades Aula 4
 ### [Frontend I (React)] Atividades Aula 5 - WIP
 ### [Frontend I (React)] Atividades Aula 6 - WIP
