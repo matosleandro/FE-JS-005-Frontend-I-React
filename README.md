@@ -31,7 +31,10 @@ Módulo sendo ministrado pela Prof. [@leticiavargas](https://github.com/leticiav
     - Atividade 4 - Refugio dos sabores
     - Atividade 5 - Jardim poético
     - Atividade [Entrega] - Comentarios de blog
-### [Frontend I (React)] Atividades Aula 4
+### [[Frontend I (React)] Atividades Aula 4](https://vargasleticia.notion.site/Frontend-I-React-Atividades-Aula-4-c9ff3e13cc774776b161539d1f064961)
+    - Atividade 1 - Um bug apareceu na festa
+    - Atividade 2 -  App de Notícias tá doidão
+    - Atividade 3 - Gerenciamento de Lista de Tarefas
 ### [Frontend I (React)] Atividades Aula 5 - WIP
 ### [Frontend I (React)] Atividades Aula 6 - WIP
 ### [Frontend I (React)] Atividades Aula 7 - WIP
