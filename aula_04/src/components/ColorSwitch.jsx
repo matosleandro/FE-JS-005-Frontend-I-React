@@ -4,4 +4,4 @@ const ColorSwitch = ({ onChangeColor, onClick }) => {
     );
   };
   
-  export default ColorSwitch;  
+  export default ColorSwitch;
