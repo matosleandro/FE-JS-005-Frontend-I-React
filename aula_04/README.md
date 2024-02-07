@@ -9,15 +9,21 @@ O objetivo desta atividade é conectar o botão do componente **`ColorSwitch`** 
 **Instruções:**
 
 1. **Componente `ColorSwitch`:**
-   ```const ColorSwitch = ({ onChangeColor }) => {
+
+```
+   const ColorSwitch = ({ onChangeColor }) => {
       return (
          <button>Alterar Cor</button>
       );
     };
     
-    export default ColorSwitch;```
+    export default ColorSwitch;
+```
+   
 2. **Componente `App`:**
-   ```import { useState } from 'react';
+
+```
+    import { useState } from 'react';
     import ColorSwitch from './ColorSwitch';
     
     function App() {
@@ -47,7 +53,9 @@ O objetivo desta atividade é conectar o botão do componente **`ColorSwitch`** 
       );
     };
     
-    export default App;```
+    export default App;
+```
+   
 3. **Comportamento esperado**
     - Ao clicar no botão do **`ColorSwitch`**, **APENAS** a cor de background deve alterar;
     - O contador deve ser incrementado toda vez que o usuário clicar fora do botão.
