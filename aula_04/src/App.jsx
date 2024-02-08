@@ -27,9 +27,18 @@ function App() {
   }
 
   return (
-    <div style={{ width: '100%', height: '100%' }} onClick={handleBackgroundClick}>
+    <div style={{
+      width: '100%',
+      height: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      margin: 0,
+      padding: 0
+    }} onClick={handleBackgroundClick}>
       <h1>Contador de Cliques: {clicks}</h1>
-      <ColorSwitch onChangeColor={handleChangeColor} onClick={handleButtonClick} />
+      <ColorSwitch onChangeColor={handleChangeColor} />
     </div>
   );
 };
