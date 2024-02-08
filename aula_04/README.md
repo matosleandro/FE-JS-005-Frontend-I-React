@@ -1,8 +1,61 @@
-# React + Vite
+# Atividade 1 - Um bug apareceu na festa
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Você faz parte da equipe de desenvolvimento da empresa FestTech, responsável por criar componentes para uma aplicação que gerencia festas e eventos. Um dos componentes, chamado ColorSwitch, está apresentando um comportamento inesperado, e é sua missão investigar e corrigir esse bug.
 
-Currently, two official plugins are available:
+**Objetivo:**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O objetivo desta atividade é conectar o botão do componente **`ColorSwitch`** ao manipulador de eventos **`onChangeColor`** recebido do componente pai.
+
+**Instruções:**
+
+1. **Componente `ColorSwitch`:**
+
+```
+   const ColorSwitch = ({ onChangeColor }) => {
+      return (
+         <button>Alterar Cor</button>
+      );
+    };
+    
+    export default ColorSwitch;
+```
+   
+2. **Componente `App`:**
+
+```
+    import { useState } from 'react';
+    import ColorSwitch from './ColorSwitch';
+    
+    function App() {
+    
+      const [clicks, setClicks] = useState(0);
+    
+      function handleClickOutside() {
+        setClicks(c => c + 1);
+      }
+    
+      function getRandomLightColor() {
+        let r = 150 + Math.round(100 * Math.random());
+        let g = 150 + Math.round(100 * Math.random());
+        let b = 150 + Math.round(100 * Math.random());
+        return `rgb(${r}, ${g}, ${b})`;
+      }
+    
+      function handleChangeColor() {
+        let bodyStyle = document.body.style;
+        bodyStyle.backgroundColor = getRandomLightColor();
+      }
+      return (
+        <div style={{ width: '100%', height: '100%' }} onClick={handleClickOutside}>
+          <h1>Contador de Cliques: {clicks}</h1>
+          <ColorSwitch onChangeColor={handleChangeColor} />
+        </div>
+      );
+    };
+    
+    export default App;
+```
+   
+3. **Comportamento esperado**
+    - Ao clicar no botão do **`ColorSwitch`**, **APENAS** a cor de background deve alterar;
+    - O contador deve ser incrementado toda vez que o usuário clicar fora do botão.
