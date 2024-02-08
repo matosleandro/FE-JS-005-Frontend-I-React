@@ -38,7 +38,7 @@ function App() {
       padding: 0
     }} onClick={handleBackgroundClick}>
       <h1>Contador de Cliques: {clicks}</h1>
-      <ColorSwitch onChangeColor={handleChangeColor} />
+      <ColorSwitch onChangeColor={handleChangeColor} onClick={handleButtonClick} />
     </div>
   );
 };
