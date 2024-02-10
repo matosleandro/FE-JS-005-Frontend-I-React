@@ -2,14 +2,14 @@
 
 ### Neste projeto final do módulo de Framework de Front End I (React), você terá a oportunidade de demonstrar suas habilidades em React, incluindo:
 
-- Arquitetura de Componentes: Crie componentes reutilizáveis e bem estruturados que sigam os princípios do React;
-- Props e PropTypes: Use props para passar dados para componentes e PropTypes para validar esses dados;
-- State e State Lifting: Use state para armazenar dados que mudam ao longo do tempo e state lifting para compartilhar state entre componentes;
-- React Router: Use o React Router para criar navegação entre páginas e componentes;
-- Renderização de Componentes (Condicional e Listas): Use a renderização condicional para renderizar componentes apenas quando necessário e a renderização de listas para renderizar uma lista de componentes;
-- Composição de Componentes: Use a composição de componentes para criar componentes mais complexos a partir de componentes menores;
-- Formulários: Use formulários para coletar dados do usuário;
-- Ciclo de Vida de Componentes: Use os métodos do ciclo de vida de componentes para controlar o comportamento dos componentes ao longo do seu ciclo de vida.
+- **Arquitetura de Componentes:** Crie componentes reutilizáveis e bem estruturados que sigam os princípios do React;
+- **Props e PropTypes:** Use props para passar dados para componentes e PropTypes para validar esses dados;
+- **State e State Lifting:** Use state para armazenar dados que mudam ao longo do tempo e state lifting para compartilhar state entre componentes;
+- **React Router:** Use o React Router para criar navegação entre páginas e componentes;
+- **Renderização de Componentes (Condicional e Listas):** Use a renderização condicional para renderizar componentes apenas quando necessário e a renderização de listas para renderizar uma lista de componentes;
+- **Composição de Componentes:** Use a composição de componentes para criar componentes mais complexos a partir de componentes menores;
+- **Formulários:** Use formulários para coletar dados do usuário;
+- **Ciclo de Vida de Componentes:** Use os métodos do ciclo de vida de componentes para controlar o comportamento dos componentes ao longo do seu ciclo de vida.
 
 ### Para realizar este projeto, você deverá criar uma aplicação web que atenda aos seguintes requisitos:
 
@@ -19,17 +19,19 @@
 - A aplicação será avaliada com base nos seguintes critérios:
 
 ### Cumprimento dos requisitos: A aplicação deve atender a todos os requisitos especificados.
-- Implementação: A aplicação deve estar bem implementada, usando as técnicas e conceitos corretos.
-- Funcionalidade: A aplicação deve ser funcional e atender aos requisitos do usuário.
-- Design: A aplicação deve ser bem projetada, usando uma estética agradável e fácil de usar.
+- **Implementação:** A aplicação deve estar bem implementada, usando as técnicas e conceitos corretos.
+- **Funcionalidade:** A aplicação deve ser funcional e atender aos requisitos do usuário.
+- **Design:** A aplicação deve ser bem projetada, usando uma estética agradável e fácil de usar.
 
 ## Descrição do projeto
 
 **Introdução**
 
-O BestBrowserGames é uma comunidade web onde seus membros poderão compartilhar as suas impressões sobre os browser games que já jogaram, identificando o que gostaram e o que não gostaram. Com estas informações, o BestBrowserGames poderá dar para cada membro recomendações de browser games que ele ainda não conhece e que provavelmente irá gostar.
+O **BestBrowserGames** é uma comunidade web onde seus membros poderão compartilhar as suas impressões sobre os browser games que já jogaram, identificando o que gostaram e o que não gostaram. Com estas informações, o BestBrowserGames poderá dar para cada membro recomendações de browser games que ele ainda não conhece e que provavelmente irá gostar.
 
-Este projeto tem como objetivo desenvolver uma aplicação web para o BestBrowserGames utilizando o React como framework principal. A aplicação deverá atender aos seguintes requisitos:
+Este projeto tem como objetivo desenvolver uma aplicação web para o BestBrowserGames utilizando o React como framework principal. 
+
+A aplicação deverá atender aos seguintes requisitos:
 
 ### Funcionalidades
 
@@ -46,7 +48,7 @@ Estado
 País
 ```
 
-Os membros deverão ser capazes de atualizar posteriormente os dados fornecidos no cadastro.
+*Os membros deverão ser capazes de atualizar posteriormente os dados fornecidos no cadastro.*
 
 **2. Entrar com uma conta e realizar alteração de dados cadastrais de membros**
 
@@ -61,7 +63,7 @@ Senha
 
 **3. Cadastro e gerenciamento de browser games**
 
-O administrador do BestBrowserGames deverá ser responsável por cadastrar os browsers games que serão avaliados pelos membros. Os browsers games deverão ser organizados nas seguintes categorias iniciais: *Strategy, Shooter, Puzzle, Arcade, Role Playing Game (RPG), Sports, Action, Adventure*. No entanto, o administrador poderá editar esta lista, criando novas categorias ou alterando os nomes das categorias já cadastradas. Ao cadastrar um browser game, o administrador deverá fornecer as seguintes informações:
+O administrador do BestBrowserGames deverá ser responsável por cadastrar os browsers games que serão avaliados pelos membros. Os browsers games deverão ser organizados nas seguintes categorias iniciais: **Strategy, Shooter, Puzzle, Arcade, Role Playing Game (RPG), Sports, Action, Adventure**. No entanto, o administrador poderá editar esta lista, criando novas categorias ou alterando os nomes das categorias já cadastradas. Ao cadastrar um browser game, o administrador deverá fornecer as seguintes informações:
 
 ```
 Nome
