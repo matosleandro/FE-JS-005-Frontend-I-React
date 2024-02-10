@@ -37,12 +37,14 @@ Este projeto tem como objetivo desenvolver uma aplicação web para o BestBrowse
 
 A aplicação deverá permitir que qualquer pessoa se cadastre como membro do BestBrowserGames, fornecendo as seguintes informações:
 
-> Nome completo
-> E-mail
-> Senha
-> Data de nascimento
-> Estado
-> País
+```
+Nome completo
+E-mail
+Senha
+Data de nascimento
+Estado
+País
+```
 
 Os membros deverão ser capazes de atualizar posteriormente os dados fornecidos no cadastro.
 
@@ -50,8 +52,10 @@ Os membros deverão ser capazes de atualizar posteriormente os dados fornecidos 
 
 A aplicação deverá permitir que qualquer pessoa cadastrada possa fazer o login, fornecendo as seguintes informações:
 
-> E-mail
-> Senha
+```
+E-mail
+Senha
+```
 
 *Os membros deverão ser capazes de atualizar os dados fornecidos no cadastro.*
 
@@ -59,19 +63,23 @@ A aplicação deverá permitir que qualquer pessoa cadastrada possa fazer o logi
 
 O administrador do BestBrowserGames deverá ser responsável por cadastrar os browsers games que serão avaliados pelos membros. Os browsers games deverão ser organizados nas seguintes categorias iniciais: *Strategy, Shooter, Puzzle, Arcade, Role Playing Game (RPG), Sports, Action, Adventure*. No entanto, o administrador poderá editar esta lista, criando novas categorias ou alterando os nomes das categorias já cadastradas. Ao cadastrar um browser game, o administrador deverá fornecer as seguintes informações:
 
-> Nome
-> Categoria
-> URL de acesso ao jogo
-> URL do vídeo de demonstração (se houver)
-> Descrição
-> Imagem ilustrativa
+```
+Nome
+Categoria
+URL de acesso ao jogo
+URL do vídeo de demonstração (se houver)
+Descrição
+Imagem ilustrativa
+```
 
 **4. Busca por browser games**
 
 Os membros deverão ser capazes de buscar pelos browsers games cadastrados de duas maneiras:
 
-> Por nome ou por parte do nome
-> Por categoria
+```
+Por nome ou por parte do nome
+Por categoria
+```
 
 **5. Avaliação de browser games**
 
