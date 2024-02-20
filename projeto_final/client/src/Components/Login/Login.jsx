@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './Login.css'
 import '../../App.css'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import Axios from 'axios'
 
 // import assets
 import video from '../../LoginAssets/video.mp4'
@@ -13,6 +14,50 @@ import { BsFillShieldLockFill } from 'react-icons/bs'
 import { AiOutlineSwapRight } from 'react-icons/ai'
 
 const Login = () => {
+  // useState
+  const [loginUserName, setLoginUserName] = useState('')
+  const [loginPassword, setLoginPassword] = useState('')
+  const navigateTo = useNavigate()
+
+  const [loginStatus, setLoginStatus] = useState('')
+  const [statusHolder, setstatusHolder] = useState('message')
+
+  // onClick
+  const loginUser = (e)=>{
+    // prevent submitting
+    e.preventDefault();
+    // use Axios to create an API to conect to the server
+    Axios.post('http://localhost:3002/login', {
+      // create variable to sent the server through the route
+      LoginUserName: loginUserName,
+      LoginPassword: loginPassword
+    }).then((response)=>{
+      console.log()
+      if(response.data.message || loginUserName == '' || loginPassword == ''){
+        navigateTo('/')
+        setLoginStatus(`Você não possui cadastro`)
+      }
+      else{
+        navigateTo('/painel')
+      }
+    })
+  }
+
+  useEffect(()=>{
+  if(loginStatus !== ''){
+    setstatusHolder('showMessage') // show message
+    setTimeout(() => {
+      setstatusHolder('message') // hide it after 4s
+    }, 4000);
+  }
+  }, [loginStatus])
+
+  // clear the form on submit
+  const onSubmit = () => {
+    setLoginUserName('')
+    setLoginPassword('')
+  }
+
   return (
     <div className='loginPage flex'>
       <div className='container flex'>
@@ -38,16 +83,20 @@ const Login = () => {
             <h3>Bem-vindo</h3>
           </div>
 
-          <form action='' className='form grid'>
-            <span className='showMessage'>Login Status</span>
+          <form className='form grid' onSubmit={onSubmit}>
+            <span className={statusHolder}>{loginStatus}</span>
+
             <div className='inputDiv'>
-              <label htmlFor='username'>Usuario</label>
+              <label htmlFor='username'>Usuário</label>
               <div className='input flex'>
                 <FaUserShield className='icon' />
                 <input
                   type='text'
                   id='username'
                   placeholder='Insira seu usuário'
+                  onChange={(event)=>{
+                    setLoginUserName(event.target.value)
+                  }}
                 />
               </div>
             </div>
@@ -60,12 +109,15 @@ const Login = () => {
                   type='password'
                   id='password'
                   placeholder='Insira sua senha'
+                  onChange={(event)=>{
+                    setLoginPassword(event.target.value)
+                  }}
                 />
               </div>
             </div>
 
-            <button type='submit' className='btn flex'>
-              <span>Login</span>
+            <button type='submit' className='btn flex' onClick={loginUser}>
+              <span>Entrar</span>
               <AiOutlineSwapRight className='icon' />
             </button>
 

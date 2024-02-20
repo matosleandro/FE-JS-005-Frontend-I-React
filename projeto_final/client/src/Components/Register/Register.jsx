@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Register.css'
 import '../../App.css'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import Axios from 'axios'
 
 // import assets
 import video from '../../LoginAssets/video.mp4'
@@ -14,6 +15,32 @@ import { AiOutlineSwapRight } from 'react-icons/ai'
 import { MdMarkEmailRead } from 'react-icons/md'
 
 const Register = () => {
+  // useState
+  const [email, setEmail] = useState('')
+  const [userName, setUserName] = useState('')
+  const [password, setPassword] = useState('')
+  const navigateTo = useNavigate()
+
+  // onClick
+  const createUser = (e) => {
+    e.preventDefault()
+    // use Axios to create an API to conect to the server
+    Axios.post('http://localhost:3002/register', {
+      // create variable to sent the server through the route
+      Email: email,
+      UserName: userName,
+      Password: password
+    }).then(()=>{
+      //
+      navigateTo('/')
+      //
+      setEmail('')
+      setUserName('')
+      setPassword('')
+    })
+  }
+
+
   return (
     <div className='registerPage flex'>
       <div className='container flex'>
@@ -49,6 +76,9 @@ const Register = () => {
                   type='email'
                   id='email'
                   placeholder='Insira seu e-mail'
+                  onChange={(event)=>{
+                    setEmail(event.target.value)
+                  }}
                 />
               </div>
             </div>
@@ -61,6 +91,9 @@ const Register = () => {
                   type='text'
                   id='username'
                   placeholder='Insira seu usuário'
+                  onChange={(event)=>{
+                    setUserName(event.target.value)
+                  }}
                 />
               </div>
             </div>
@@ -73,12 +106,15 @@ const Register = () => {
                   type='password'
                   id='password'
                   placeholder='Insira sua senha'
+                  onChange={(event)=>{
+                    setPassword(event.target.value)
+                  }}
                 />
               </div>
             </div>
 
-            <button type='submit' className='btn flex'>
-              <span>Register</span>
+            <button type='submit' className='btn flex' onClick={createUser}>
+              <span>Cadastrar</span>
               <AiOutlineSwapRight className='icon' />
             </button>
 
