@@ -24,9 +24,9 @@ const Register = () => {
   // onClick
   const createUser = (e) => {
     e.preventDefault()
-    // use Axios to create an API to conect to the server
+    // Utilize o Axios para criar uma API para se conectar ao servidor.
     Axios.post('http://localhost:3002/register', {
-      // create variable to sent the server through the route
+      // Criar uma variável para enviar ao servidor por meio da rota.
       Email: email,
       UserName: userName,
       Password: password

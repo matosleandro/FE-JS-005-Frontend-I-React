@@ -24,11 +24,11 @@ const Login = () => {
 
   // onClick
   const loginUser = (e)=>{
-    // prevent submitting
+    // Evitar a submissão.
     e.preventDefault();
-    // use Axios to create an API to conect to the server
+    // Utilize o Axios para criar uma API e se conectar ao servidor.
     Axios.post('http://localhost:3002/login', {
-      // create variable to sent the server through the route
+      // Criar uma variável para enviar ao servidor por meio da rota.
       LoginUserName: loginUserName,
       LoginPassword: loginPassword
     }).then((response)=>{
@@ -45,14 +45,14 @@ const Login = () => {
 
   useEffect(()=>{
   if(loginStatus !== ''){
-    setstatusHolder('showMessage') // show message
+    setstatusHolder('showMessage') // Exibir mensagem.
     setTimeout(() => {
-      setstatusHolder('message') // hide it after 4s
+      setstatusHolder('message') // Ocultar após 4 segundos.
     }, 4000);
   }
   }, [loginStatus])
 
-  // clear the form on submit
+  // Limpar o formulário ao enviar.
   const onSubmit = () => {
     setLoginUserName('')
     setLoginPassword('')
