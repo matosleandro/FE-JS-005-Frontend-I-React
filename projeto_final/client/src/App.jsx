@@ -8,6 +8,8 @@ import {
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
+import Sidebar from './Components/Painel/Sidebar Section/Sidebar'
+import Body from './Components/Painel/Body Section/Body'
 
 const router = createBrowserRouter([
   {
@@ -26,8 +28,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <RouterProvider router={router}/>
+      <Sidebar/>
+      <Body/>
     </div>
   )
 }
